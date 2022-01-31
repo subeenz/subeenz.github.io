@@ -251,7 +251,7 @@ whitelist:
 #  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
-  path: /categories/
+  path: /_pages/categories/ #/categories/
 tag_archive:
   type: liquid
   path: /tags/
@@ -281,7 +281,7 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: posts
+      type: docs
     values:
       layout: single
       author_profile: true
@@ -289,5 +289,5 @@ defaults:
       comments: # true
       share: true
       related: true
-      # sidebar:
-      #   nav: "docs"
+      sidebar:
+        nav: "docs"
