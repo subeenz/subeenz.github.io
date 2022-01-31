@@ -15,8 +15,15 @@ layout: archive
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
   {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
+    {% include archive-single.html type=ent ries_layout %}
   {% endfor %}
+</div>
+<div class="page-category">
+  <ul>
+  {% for category in site.categories %}
+    <li><a href="/category/{{ category | first}}">{{ category | first }} ({{ category | last | size}})</a></li>
+  {% endfor %}
+  </ul>
 </div>
 
 {% include paginator.html %}
