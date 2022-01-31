@@ -10,3 +10,16 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+  docs:
+  - title: Study
+    children:
+      - title: "NLP"
+        url: nlp/
+        category: "nlp"
+  - title: Blog
+    children:
+      - title: "Blog"
+        url: blog/
+        category: "blog"
+
